@@ -2,7 +2,20 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="mb-3">
+    <label for="number1" class="form-label">Número 1</label>
+    <input type="number" class="form-control" id="number1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Primer número</div>
 </div>
+<div class="mb-3">
+    <label for="number2" class="form-label">Número 2</label>
+    <input type="number" class="form-control" id="number2">
+</div>
+<button class="btn btn-primary" onclick="sumar()">Submit</button>
+
+<div class="mb-3">
+    <label for="resultado" class="form-label">Resultado</label>
+    <input type="number" class="form-control" id="resultado" readonly>
+</div>
+
+<script src="~/js/sumar.js"></script>
